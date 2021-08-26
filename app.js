@@ -1,4 +1,6 @@
 // import functions
+import { add } from './calculator.js';
+
 
 // reference needed DOM elements
 
@@ -7,12 +9,11 @@ const addNumber2 = document.getElementById('add-number-2');
 const addButton = document.getElementById('add-button');
 const addAnswer = document.getElementById('add-answer');
 
-
 // set event listeners 
 
 addButton.addEventListener('click', () => {
+console.log('addNumber1.value');
 
-    
 })
 
 
