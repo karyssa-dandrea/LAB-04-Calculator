@@ -12,9 +12,13 @@ const addAnswer = document.getElementById('add-answer');
 // set event listeners 
 
 addButton.addEventListener('click', () => {
-console.log('addNumber1.value');
+    const num1 = Number(addNumber1.value);
+    const num2 = Number(addNumber2.value);
+    const result = add(num1, num2);
+    addAnswer.textContent = result;
+    
 
-})
+});
 
 
 
