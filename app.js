@@ -2,7 +2,7 @@
 import { add } from './calculator.js';
 import { sub } from './calculator.js';
 import { mult } from './calculator.js';
-import { div} from './calculator.js';
+import { div } from './calculator.js';
 
 // reference needed DOM elements
 
