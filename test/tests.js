@@ -5,6 +5,8 @@ import { sub } from '../calculator.js';
 
 import { mult } from '../calculator.js';
 
+import { div } from '../calculator.js';
+
 const test = QUnit.test;
 
 // name your test by what it is testing
@@ -28,19 +30,28 @@ test('add two numbers', (expect) => {
             const number1 = 3;
             const number2 = 4;
             const expected = 12;
+
+            test('div two numbers', (expect) => {
+                //Arrange
+                // Set up your arguments and expectations
+                const number1 = 12;
+                const number2 = 2;
+                const expected = 6;
     
     //Act 
     const result = add(number1, number2);
     // Call the function you're testing and set the result to a const
     const actual = result; // use your function here
 
-    //Act 
     const result = sub(number1, number2);
     // Call the function you're testing and set the result to a const
     const actual = result; // use your function here
 
-    //Act 
     const result = mult(number1, number2);
+    // Call the function you're testing and set the result to a const
+    const actual = result; // use your function here
+
+    const result = div(number1, number2);
     // Call the function you're testing and set the result to a const
     const actual = result; // use your function here
 
@@ -50,5 +61,7 @@ test('add two numbers', (expect) => {
 
     expect.equal(actual, expected);
 
+    expect.equal(actual, expected);
+    
     expect.equal(actual, expected);
 });

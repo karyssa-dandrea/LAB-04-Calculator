@@ -2,6 +2,7 @@
 import { add } from './calculator.js';
 import { sub } from './calculator.js';
 import { mult } from './calculator.js';
+import { div} from './calculator.js';
 
 // reference needed DOM elements
 
@@ -19,6 +20,11 @@ const multNumber1 = document.getElementById('mult-number-1');
 const multNumber2 = document.getElementById('mult-number-2');
 const multButton = document.getElementById('mult-button');
 const multAnswer = document.getElementById('mult-answer');
+
+const divNumber1 = document.getElementById('div-number-1');
+const divNumber2 = document.getElementById('div-number-2');
+const divButton = document.getElementById('div-button');
+const divAnswer = document.getElementById('div-answer');
 
 
 // set event listeners 
@@ -46,6 +52,15 @@ multButton.addEventListener('click', () => {
     const num2 = Number(multNumber2.value);
     const result = mult(num1, num2);
     multAnswer.textContent = result;
+    
+
+});
+
+divButton.addEventListener('click', () => {
+    const num1 = Number(divNumber1.value);
+    const num2 = Number(divNumber2.value);
+    const result = div(num1, num2);
+    divAnswer.textContent = result;
     
 
 });
