@@ -1,6 +1,7 @@
 // import functions
 import { add } from './calculator.js';
 import { sub } from './calculator.js';
+import { mult } from './calculator.js';
 
 // reference needed DOM elements
 
@@ -13,6 +14,11 @@ const subNumber1 = document.getElementById('sub-number-1');
 const subNumber2 = document.getElementById('sub-number-2');
 const subButton = document.getElementById('sub-button');
 const subAnswer = document.getElementById('sub-answer');
+
+const multNumber1 = document.getElementById('mult-number-1');
+const multNumber2 = document.getElementById('mult-number-2');
+const multButton = document.getElementById('mult-button');
+const multAnswer = document.getElementById('mult-answer');
 
 
 // set event listeners 
@@ -35,6 +41,14 @@ subButton.addEventListener('click', () => {
 
 });
 
+multButton.addEventListener('click', () => {
+    const num1 = Number(multNumber1.value);
+    const num2 = Number(multNumber2.value);
+    const result = mult(num1, num2);
+    multAnswer.textContent = result;
+    
+
+});
 
 
     // get user input(s)
